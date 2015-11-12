@@ -9,7 +9,6 @@ module.exports = function (grunt) {
             build: {
                 src: [
                     'res/css/normalize.css',
-                    'res/css/bootstrap.css',
                     'res/css/typography.css',
                     'res/css/layout.css'
                 ],
