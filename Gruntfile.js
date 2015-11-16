@@ -9,7 +9,7 @@ module.exports = function (grunt) {
             build: {
                 src: [
                     'res/css/normalize.css',
-                    'res/css/typography.css',
+                    'res/css/skeleton.css',
                     'res/css/layout.css'
                 ],
                 dest: 'res/build/global.min.css'
