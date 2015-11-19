@@ -9,25 +9,55 @@ body {
 }
 
 .container {
-    max-width: 650px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 40px;
 }
 
 /* Header
 ----------------------------------------------- */
+.banner {
+    background: url(../img/bg_header.jpg) center center;
+    margin-bottom: 40px;
+    min-height: 180px;
+    text-align: center;
 
+    h1.title {
+        display: inline-block;
+        margin: 54px auto 20px;
 
+        img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+    }
+}
 
 /* Content
 ----------------------------------------------- */
-
-
-
-/* Article
------------------------------------------------ */
-
-
+img.rounded {
+    border-radius: 50%;
+    margin: 20px 0;
+    max-width: 100%;
+    height: auto;
+}
 
 /* Footer
 ----------------------------------------------- */
+.elsewhere {
+    ul.inline {
+        display: block;
+        list-style: none;
+        margin: 10px 0;
+
+        li {
+            display: inline-block;
+
+            a {
+                display: block;
+                margin-right: 40px;
+            }
+        }
+    }
+}
