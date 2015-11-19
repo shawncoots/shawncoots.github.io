@@ -13,7 +13,7 @@ body {
 /* Header
 ----------------------------------------------- */
 .banner {
-  background: url(../img/bg_header.jpg) center center;
+  border-bottom: 1px solid #bec8ce;
   margin-bottom: 40px;
   min-height: 180px;
   text-align: center;
@@ -37,15 +37,22 @@ img.rounded {
 }
 /* Footer
 ----------------------------------------------- */
+.elsewhere {
+  border-top: 1px solid #bec8ce;
+  font-size: 1.5em;
+  margin-top: 40px;
+  padding: 20px 0;
+  text-align: right;
+}
 .elsewhere ul.inline {
   display: block;
   list-style: none;
-  margin: 10px 0;
+  margin: 0;
 }
 .elsewhere ul.inline li {
   display: inline-block;
 }
 .elsewhere ul.inline li a {
   display: block;
-  margin-right: 40px;
+  margin-left: 20px;
 }
