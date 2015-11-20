@@ -1,48 +1,43 @@
 /* Variables
 ----------------------------------------------- */
-/* Layout
------------------------------------------------ */
-body {
-  padding: 0;
-}
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 40px;
-}
 /* Header
 ----------------------------------------------- */
 .banner {
   border-bottom: 1px solid #bec8ce;
-  margin-bottom: 40px;
-  min-height: 180px;
+  margin-bottom: 20px;
   text-align: center;
 }
 .banner h1.title {
   display: inline-block;
-  margin: 54px auto 20px;
+  margin: 18px auto 10px;
 }
 .banner h1.title img {
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
   height: auto;
 }
 /* Content
 ----------------------------------------------- */
-img.rounded {
+.content .shawn {
+  text-align: center;
+}
+.content .shawn img.rounded {
   border-radius: 50%;
-  margin: 20px 0;
-  max-width: 100%;
+  margin: 10px auto;
+  max-width: 200px;
   height: auto;
+}
+.content hr {
+  display: none;
 }
 /* Footer
 ----------------------------------------------- */
 .elsewhere {
   border-top: 1px solid #bec8ce;
   font-size: 1.5em;
-  margin-top: 40px;
-  padding: 20px 0;
-  text-align: right;
+  margin-top: 20px;
+  padding: 10px 0;
+  text-align: center;
 }
 .elsewhere ul.inline {
   display: block;
@@ -51,8 +46,50 @@ img.rounded {
 }
 .elsewhere ul.inline li {
   display: inline-block;
+  margin: 0;
 }
 .elsewhere ul.inline li a {
   display: block;
-  margin-left: 20px;
+  margin: 0 10px;
+}
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 700px) {
+  /* Header
+    ----------------------------------------------- */
+  .banner {
+    margin-bottom: 40px;
+    min-height: 180px;
+  }
+  .banner h1.title {
+    display: inline-block;
+    margin: 54px auto 20px;
+  }
+  .banner h1.title img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  /* Content
+    ----------------------------------------------- */
+  .content .shawn {
+    text-align: left;
+  }
+  .content .shawn img.rounded {
+    margin: 20px auto;
+    max-width: 100%;
+  }
+  .content hr {
+    display: block;
+  }
+  /* Footer
+    ----------------------------------------------- */
+  .elsewhere {
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: right;
+  }
+  .elsewhere ul.inline li a {
+    margin-left: 20px;
+  }
 }

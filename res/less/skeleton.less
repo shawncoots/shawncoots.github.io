@@ -7,7 +7,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 840px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -24,8 +24,8 @@
     padding: 0; }
 }
 
-/* For devices larger than 550px */
-@media (min-width: 550px) {
+/* Sort Columns */
+@media (min-width: 700px) {
   .container {
     width: 80%; }
   .column,
@@ -118,14 +118,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 4.2rem;
+    font-size: 3rem;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: -.1rem
 }
 
 h2 {
-    font-size: 3.6rem;
+    font-size: 2.8rem;
     font-weight: 400;
     line-height: 1.25;
     letter-spacing: -.1rem;
@@ -134,7 +134,7 @@ h2 {
 
 h3 {
     color: @black;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight: 500;
     letter-spacing: -0.02em;
     line-height: 1.2;
@@ -169,7 +169,7 @@ h6 {
 }
 
 p {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     line-height: 1.4;
     margin-top: 0;
 }
@@ -183,9 +183,13 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: @primary;
+  text-decoration: none;
+}
 a:hover {
-  color: #0FA0CE; }
+  color: darken(@primary, 10%);
+  text-decoration: none;
+}
 
 
 /* Buttons
@@ -231,8 +235,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+  background-color: @grey;
+  border-color: @grey; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -244,8 +248,8 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  background-color: @primary;
+  border-color: @primary; }
 
 
 /* Forms
@@ -262,7 +266,7 @@ select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
-  border: 1px solid #D1D1D1;
+  border: 1px solid @grey;
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
@@ -291,7 +295,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid @grey;
   outline: 0; }
 label,
 legend {
@@ -430,11 +434,30 @@ there.
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 700px) {
+    /* Typography
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    h1 {
+        font-size: 4.2rem;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 3.6rem;
+        line-height: 1.25;
+    }
+
+    h3 {
+        font-size: 2.8rem;
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 2.2rem;
+        line-height: 1.4;
+    }
+}
 
 /* Larger than desktop */
 @media (min-width: 1000px) {}

@@ -2,33 +2,20 @@
 ----------------------------------------------- */
 @import "lib/variables.less";
 
-/* Layout
------------------------------------------------ */
-body {
-    padding: 0;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 40px;
-}
-
 /* Header
 ----------------------------------------------- */
 .banner {
     border-bottom: 1px solid @grey;
-    margin-bottom: 40px;
-    min-height: 180px;
+    margin-bottom: 20px;
     text-align: center;
 
     h1.title {
         display: inline-block;
-        margin: 54px auto 20px;
+        margin: 18px auto 10px;
 
         img {
             width: 100%;
-            max-width: 500px;
+            max-width: 300px;
             height: auto;
         }
     }
@@ -36,11 +23,21 @@ body {
 
 /* Content
 ----------------------------------------------- */
-img.rounded {
-    border-radius: 50%;
-    margin: 20px 0;
-    max-width: 100%;
-    height: auto;
+.content {
+    .shawn {
+        text-align: center;
+
+        img.rounded {
+            border-radius: 50%;
+            margin: 10px auto;
+            max-width: 200px;
+            height: auto;
+        }
+    }
+
+    hr {
+        display: none;
+    }
 }
 
 /* Footer
@@ -48,9 +45,9 @@ img.rounded {
 .elsewhere {
     border-top: 1px solid @grey;
     font-size: 1.5em;
-    margin-top: 40px;
-    padding: 20px 0;
-    text-align: right;
+    margin-top: 20px;
+    padding: 10px 0;
+    text-align: center;
 
     ul.inline {
         display: block;
@@ -59,10 +56,66 @@ img.rounded {
 
         li {
             display: inline-block;
+            margin: 0;
 
             a {
                 display: block;
-                margin-left: 20px;
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 700px) {
+    /* Header
+    ----------------------------------------------- */
+    .banner {
+        margin-bottom: 40px;
+        min-height: 180px;
+
+        h1.title {
+            display: inline-block;
+            margin: 54px auto 20px;
+
+            img {
+                width: 100%;
+                max-width: 500px;
+                height: auto;
+            }
+        }
+    }
+
+    /* Content
+    ----------------------------------------------- */
+    .content {
+        .shawn {
+            text-align: left;
+
+            img.rounded {
+                margin: 20px auto;
+                max-width: 100%;
+            }
+        }
+
+        hr {
+            display: block;
+        }
+    }
+
+    /* Footer
+    ----------------------------------------------- */
+    .elsewhere {
+        margin-top: 40px;
+        padding: 20px 0;
+        text-align: right;
+
+        ul.inline {
+            li {
+                a {
+                    margin-left: 20px;
+                }
             }
         }
     }
