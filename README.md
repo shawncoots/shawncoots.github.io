@@ -1,7 +1,7 @@
 # Hello There
 
-### I find that the title of Web Generalist best applies to what I do for a living.
+### I practice relentless optimism
 
-During the last 17 years, I’ve worked as a designer, front-end developer, project manager, and content strategist. I'm also a writer and designer living and working in Louisville, Kentucky. My beautiful wife and I have three lovable cats and watch Netflix now and then. Nice to meet you.
+Technology can make the world a better place if the humans who use it are carefully considered. I firmly believe in this goal and work toward it every day. For the past 20 years, I’ve worked as a designer, developer, content strategist, and product manager. While I have a wide range of technical experience, I consider empathy and communication to be my most valuable skills.
 
 This is the code for my personal website, obviously.
