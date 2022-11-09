@@ -1,9 +1,0 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
-
-# TEAM
-
-    Shawn Coots -- Everything -- @shawncoots
-
-# TECHNOLOGY COLOPHON
-    HTML5, CSS3
